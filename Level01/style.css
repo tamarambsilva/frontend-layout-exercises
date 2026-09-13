@@ -106,3 +106,15 @@ footer {
     padding: 40px;
     background-color: #eee;
 }
+
+/* Tablet Model*/
+
+@media (max-width: 768px) {
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        margin-top: 30px;
+    }
