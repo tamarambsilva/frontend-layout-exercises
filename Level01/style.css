@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    background-color: #333;
+}
+
+.logo {
+    flex: 1;
+    padding: 25px;
+    background-color: #eee;
+}
+
+.nav {
+    flex: 3;
+    padding: 25px;
+    background-color: #eee;
+}
+
+.social {
+    flex: 1;
+    padding: 25px;
+    background-color: #eee;
+}
+
+
+/* BANNER */
+
+.banner {
+    margin-top: 30px;
+    padding: 50px;
+    background-color: orange;
+}
+
+
+/* PARTE PRINCIPAL */
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+
+/* ARTICLES */
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 30px;
+    background-color: #555;
+}
+
+article {
+    min-height: 80px;
+    padding: 30px;
+    background-color: #3498db;
+}
+
+
+/* NAVEGACIÓN */
+
+.navegacion {
+    grid-column: 1 / 3;
+    padding: 30px;
+    background-color: #8ecae6;
+}
+
+
+/* PUBLICIDADE */
+
+aside {
+    padding: 30px;
+    background-color: #f03;
+}
+
+aside div {
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: yellow;
+}
+
+
+/* FOOTER */
+
+footer {
+    margin-top: 30px;
+    padding: 40px;
+    background-color: #eee;
+}
