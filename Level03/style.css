@@ -1,0 +1,471 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    margin: 0;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 10;
+
+    display: flex;
+    align-items: center;
+
+    min-height: 100px;
+
+    padding: 20px;
+}
+
+.logo {
+    flex: 1;
+    animation: aparecerLogo 1s ease;
+}
+
+.logo img {
+    display: block;
+
+    width: 70px;
+
+    height: auto;
+}
+
+.nav {
+    flex: 4;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav i {
+    margin-right: 5px;
+}
+
+.nav a {
+    color: #777;
+
+    font-size: 12px;
+
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #f08080;
+}
+
+
+/* =========================
+   SOCIAL
+========================= */
+
+.social {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+
+    gap: 15px;
+}
+
+.social a {
+    color: #777;
+
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+.social a:hover {
+    color: #f08080;
+}
+
+
+/* =========================
+   BANNER
+========================= */
+
+.banner {
+    min-height: 280px;
+
+    position: relative;
+
+    background-image: url("img/header.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-text {
+    position: absolute;
+
+    left: 50%;
+    bottom: 25px;
+
+    transform: translateX(-50%);
+
+    width: 88%;
+
+    padding: 20px;
+
+    background-color: rgba(210, 210, 210, 0.65);
+
+    color: #f08080;
+
+    font-family: Georgia, serif;
+
+    font-size: 20px;
+
+    text-align: center;
+
+    animation: aparecerTitulo 1s ease;
+}
+
+
+/* =========================
+   PARTE PRINCIPAL
+========================= */
+
+main {
+    display: grid;
+
+    grid-template-columns: 3fr 1fr;
+
+    gap: 30px;
+
+    margin-top: 30px;
+}
+
+
+/* =========================
+   CONTEÚDO
+========================= */
+
+.conteudo {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 1fr);
+
+    gap: 15px;
+
+    padding: 8px;
+
+    background-color: #555;
+}
+
+
+/* =========================
+   ARTICLES
+========================= */
+
+article {
+    min-width: 0;
+
+    background-color: #f4eeee;
+
+    overflow: hidden;
+}
+
+
+/* IMAGEM */
+
+.article-image {
+    position: relative;
+}
+
+.article-image img {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+
+    height: auto;
+}
+
+
+/* DATA */
+
+.article-date {
+    position: absolute;
+
+    bottom: 8px;
+    left: 8px;
+
+    color: #ffff00;
+
+    font-size: 12px;
+}
+
+
+/* TÍTULO */
+
+article h2 {
+    margin: 0;
+
+    padding: 8px;
+
+    background-color: #f08080;
+
+    color: white;
+
+    font-size: 16px;
+
+    letter-spacing: 2px;
+}
+
+
+/* TEXTOS */
+
+.article-text {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+
+    padding: 15px;
+}
+
+.article-text p {
+    margin: 0;
+
+    color: #555;
+
+    font-size: 12px;
+
+    line-height: 1.3;
+}
+
+
+/* LEER MÁS */
+
+.read-more {
+    display: block;
+
+    padding: 0 15px 15px;
+
+    color: #999;
+
+    font-size: 12px;
+
+    text-decoration: none;
+}
+
+.read-more:hover {
+    color: #f08080;
+}
+
+
+/* =========================
+   NAVEGAÇÃO
+========================= */
+
+.navegacion {
+    grid-column: 1 / 3;
+    padding: 15px;
+    background-color: #ddd;
+    color: #777;
+    font-size: 12px;
+    text-align: center;
+}
+
+.navegacion a {
+    color: #555;
+
+    font-size: 12px;
+
+    text-decoration: none;
+    
+
+    transition: color 0.3s ease;
+}
+
+.navegacion a:hover {
+    color: #f08080;
+}
+
+
+/* =========================
+   SIDEBAR
+========================= */
+
+aside {
+    padding: 20px;
+
+    background-color: #eeeeee;
+}
+
+
+/* SOMETHING */
+
+.something {
+    padding: 05px;
+
+    margin-bottom: 05px;
+
+    background-color: #eeeeee;
+
+    text-align: center;
+}
+
+.something h3 {
+    margin-top: 0;
+
+    margin-bottom: 10px;
+
+    color: #555;
+
+    font-size: 18px;
+    
+}
+
+.something p {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    margin-top: 30px;
+
+    padding: 30px;
+
+    background-color: #f4eeee;
+
+    text-align: center;
+}
+
+.footer-content p {
+    margin: 5px;
+
+    color: #777;
+
+    font-size: 12px;
+}
+
+/* =========================
+   ANIMAÇÃO DO LOGO
+========================= */
+
+@keyframes aparecerLogo {
+
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================
+   ANIMAÇÃO DO TÍTULO
+========================= */
+
+@keyframes aparecerTitulo {
+
+    from {
+        opacity: 0;
+        transform: translate(-50%, 30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        margin-top: 30px;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+    header {
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+
+        gap: 15px;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    .navegacion {
+        grid-column: 1;
+    }
+
+    .article-text {
+        grid-template-columns: 1fr;
+    }
+
+}
+
