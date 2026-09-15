@@ -13,7 +13,10 @@ body {
     position: relative;
 }
 
-/* HEADER */
+
+/* =========================
+   HEADER
+========================= */
 
 header {
     position: absolute;
@@ -42,20 +45,21 @@ header {
 
 .nav {
     flex: 4;
+
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+
 .nav i {
     margin-right: 5px;
 }
-.nav a:hover {
-    color: #f08080;
-}
+
 .nav a {
     text-decoration: none;
     color: #777;
     font-size: 12px;
+
     transition: color 0.3s ease;
 }
 
@@ -65,13 +69,17 @@ header {
 
 .social {
     flex: 1;
+
     display: flex;
     justify-content: center;
+
     gap: 15px;
 }
+
 .social a {
     color: #777;
     text-decoration: none;
+
     transition: color 0.3s ease;
 }
 
@@ -79,8 +87,10 @@ header {
     color: #f08080;
 }
 
-/* BANNER */
 
+/* =========================
+   BANNER
+========================= */
 
 .banner {
     min-height: 280px;
@@ -115,68 +125,190 @@ header {
 
     font-family: Georgia, serif;
     font-size: 20px;
+
     text-align: center;
 }
 
-/* PARTE PRINCIPAL */
+
+/* =========================
+   PARTE PRINCIPAL
+========================= */
 
 main {
     display: grid;
+
     grid-template-columns: 3fr 1fr;
+
     gap: 30px;
+
     margin-top: 30px;
 }
 
 
-/* ARTICLES */
+/* =========================
+   CONTEÚDO / ARTICLES
+========================= */
 
 .conteudo {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    padding: 30px;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 1fr);
+
+    gap: 15px;
+
+    padding: 8px;
+
     background-color: #555;
 }
 
 article {
-    min-height: 80px;
-    padding: 30px;
-    background-color: #3498db;
+    min-width: 0;
+
+    background-color: #f4eeee;
+
+    overflow: hidden;
 }
 
 
-/* NAVEGACIÓN */
+/* IMAGEM */
+
+.article-image {
+    position: relative;
+}
+
+.article-image img {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+
+    height: auto;
+}
+
+
+/* DATA */
+
+.article-date {
+    position: absolute;
+
+    bottom: 8px;
+    left: 8px;
+
+    color: #ffff00;
+
+    font-size: 12px;
+}
+
+
+/* TÍTULO */
+
+article h2 {
+    margin: 0;
+
+    padding: 8px;
+
+    background-color: #f08080;
+
+    color: white;
+
+    font-size: 16px;
+
+    letter-spacing: 2px;
+}
+
+
+/* TEXTOS */
+
+.article-text {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+
+    padding: 15px;
+}
+
+.article-text p {
+    margin: 0;
+
+    color: #555;
+
+    font-size: 12px;
+
+    line-height: 1.3;
+}
+
+
+/* LEER MÁS */
+
+.read-more {
+    display: block;
+
+    padding: 0 15px 15px;
+
+    color: #999;
+
+    font-size: 12px;
+
+    text-decoration: none;
+}
+
+.read-more:hover {
+    color: #f08080;
+}
+
+
+/* =========================
+   NAVEGAÇÃO
+========================= */
 
 .navegacion {
     grid-column: 1 / 3;
+
     padding: 30px;
+
     background-color: #8ecae6;
 }
 
 
-/* PUBLICIDADE */
+/* =========================
+   PUBLICIDADE
+========================= */
 
 aside {
     padding: 30px;
+
     background-color: #f03;
 }
 
 aside div {
     padding: 20px;
+
     margin-bottom: 15px;
+
     background-color: yellow;
 }
 
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 
 footer {
     margin-top: 30px;
+
     padding: 40px;
+
     background-color: #eee;
 }
 
-/* Tablet Model*/
+
+/* =========================
+   TABLET
+========================= */
 
 @media (max-width: 768px) {
 
@@ -187,19 +319,25 @@ footer {
     aside {
         margin-top: 30px;
     }
+
 }
 
-    /* Mobile Model */
+
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 480px) {
 
     header {
         flex-direction: column;
+
         gap: 20px;
     }
 
     .nav {
         flex-wrap: wrap;
+
         gap: 15px;
     }
 
