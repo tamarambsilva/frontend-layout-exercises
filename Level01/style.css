@@ -126,6 +126,17 @@ footer {
 
     header {
         flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .social {
+        width: 100%;
     }
 
     main {
@@ -139,5 +150,7 @@ footer {
     .navegacion {
         grid-column: 1;
     }
+
+}
 
 }
