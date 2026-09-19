@@ -71,7 +71,7 @@ header {
 main {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    gap: 30px;
+    gap: 0px;
     margin-top: 30px;
 }
 
@@ -110,6 +110,7 @@ aside {
     gap: 20px;
     border: 25px solid black;
     background-color: #E85C3F;
+    border-left: none;
 }
 
 .publicidad {
@@ -176,4 +177,3 @@ footer {
 
 }
 
-}
