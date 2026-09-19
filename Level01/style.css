@@ -134,20 +134,19 @@ footer {
 /* Tablet Model*/
 
 @media (max-width: 768px) {
-
     main {
         grid-template-columns: 1fr;
     }
 
     aside {
         margin-top: 30px;
+        border-left: 25px solid black; /* AJUSTE: Devolve a borda quando o aside vai para baixo */
     }
 }
 
     /* Mobile Model */
 
 @media (max-width: 480px) {
-
     header {
         flex-direction: column;
         gap: 20px;
@@ -174,6 +173,8 @@ footer {
     .navegacion {
         grid-column: 1;
     }
-
+    
+    aside {
+        border-left: 25px solid black; /* Garante a borda em telas bem pequenas */
+    }
 }
-
